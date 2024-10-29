@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/circular_bg"
+            android:backgroundTint="@color/blue_100"
+            android:src="@drawable/person_icon"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/profile_image_view"/>
+
+        <EditText
+            android:id="@+id/profUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+
+            />
+
+        <EditText
+            android:id="@+id/profPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Phone"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"
+            android:enabled="false"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profUpdateBtn"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green_600"
+                android:background="@drawable/btn_rounded_corner"
+                android:text="Update profile"
+                android:textColor="@color/white"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:indeterminateTint="@color/blue_800"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/red_900"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shareBtn"
+            android:layout_width="150dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_500"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="Share App"
+            android:drawableLeft="@drawable/baseline_diversity_2_24"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textColor="@color/blue_800"
+            android:text="Created by Nivashini" />
+
+    </LinearLayout>
+</layout>

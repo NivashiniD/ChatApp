@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            app:cardBackgroundColor="@color/home_color_4"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/person_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_800" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvUseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="User name" />
+
+
+                    <!--<TextView
+                        android:id="@+id/tvPhNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:singleLine="true"
+                        android:text="123456"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</layout>

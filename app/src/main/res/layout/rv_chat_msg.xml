@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/leftChatLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/teal_300"
+            android:padding="8dp"
+            android:layout_marginEnd="80dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvLeftChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Hello" />
+            <TextView
+                android:id="@+id/tvLeftChatTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="bottom"
+                android:textColor="@color/grey_700"
+                android:textSize="14sp"
+                android:text="12.00AM" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightChatLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:backgroundTint="@color/deep_purple_300"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginStart="80dp">
+            <TextView
+                android:id="@+id/tvRightChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="hiiii"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tvRightChatTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:textColor="@color/grey_800"
+                android:textSize="14sp"
+                android:text="12.00AM" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

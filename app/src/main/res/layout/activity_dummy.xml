@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".dummyui.DummyActivity">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/grey_600"
+            android:text="Move To Time Slection"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnPalindrome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/grey_600"
+            android:text="Move to Simple programs"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/grey_600"
+            android:text="Move to Pattern programs"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnWeekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/grey_600"
+            android:text="Move to WeekDay Skip"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/displayScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/grey_400"
+                android:gravity="end"
+                android:text=" "
+                android:textSize="24sp"
+                android:padding="16dp" />
+
+            <!-- Calculator Buttons -->
+            <TextView
+                android:id="@+id/ansScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="74dp"
+                android:background="#E0E0E0"
+                android:gravity="end"
+                android:padding="16dp"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <GridLayout
+                android:id="@+id/calculatorGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ansScreen"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+
+                android:columnCount="4"
+                android:rowCount="5">
+
+                <!-- Row 1 -->
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_columnSpan="2"
+                    android:text="C"
+
+                    android:textColor="@color/white"
+                    android:layout_gravity="fill"
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnDiv"
+                    android:text="/"
+
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnMulti"
+                    android:text="*"
+
+                    style="@style/CalculatorButton" />
+
+                <!-- Row 2 -->
+                <Button
+                    android:id="@+id/btnSeven"
+                    android:text="7"
+
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnEight"
+                    android:text="8"
+                    style="@style/CalculatorButton" />
+
+                <Button
+                    android:id="@+id/btnNine"
+                    style="@style/CalculatorButton"
+                    android:text="9"
+                    android:textColor="#EDEAEA" />
+                <Button
+                    android:textColor="@color/white"
+                    android:id="@+id/btnSub"
+                    android:text="-"
+                    style="@style/CalculatorButton" />
+
+                <!-- Row 3 -->
+                <Button
+                    android:id="@+id/btnFour"
+                    android:text="4"
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnFive"
+                    android:text="5"
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnSix"
+                    android:text="6"
+                    style="@style/CalculatorButton" />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_rowSpan="2"
+                    style="@style/CalculatorButton"
+                    android:layout_height="wrap_content"
+                    android:text="+" />
+
+                <!-- Row 4 -->
+                <Button
+                    android:id="@+id/btnOne"
+                    android:text="1"
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnTwo"
+                    android:text="2"
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnThree"
+                    android:text="3"
+                    style="@style/CalculatorButton" />
+
+                <!-- Row 5 -->
+                <Button
+                    android:id="@+id/btnZero"
+                    android:layout_columnSpan="2"
+                    android:text="0"
+
+                    style="@style/CalculatorButton" />
+                <Button
+                    android:id="@+id/btnDot"
+                    android:text="."
+
+                    style="@style/CalculatorButton" />
+
+                <Button
+                    android:id="@+id/btnEqual"
+                    style="@style/CalculatorButton"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="2"
+                    android:text="=" />
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

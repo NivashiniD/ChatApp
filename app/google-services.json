@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231272033388",
+    "project_id": "chatapplication-9231c",
+    "storage_bucket": "chatapplication-9231c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231272033388:android:c939ea3ea7b07d3be37c49",
+        "android_client_info": {
+          "package_name": "com.tbi.chatapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhnXmN2cYUrhSinnGUYEaJud1ttjBQi9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

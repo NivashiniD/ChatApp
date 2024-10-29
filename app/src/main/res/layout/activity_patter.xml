@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".dummyui.PatternActivity">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtRow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:gravity="center|start"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="Enter Row here....."
+            android:textColorHint="@color/grey_500"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtColumn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center|start"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="Enter Column here....."
+            android:textColorHint="@color/grey_500"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="20dp"
+            android:letterSpacing="0.02"
+            android:text="Shapes"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/spnShape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <Button
+            android:id="@+id/btnDraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:text="Draw Star Pattern" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="20dp"
+            android:letterSpacing="0.02"
+            android:text="Result:"
+            android:textColor="@color/teal_900"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="*"
+            android:textColor="@color/red_900"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</layout>
